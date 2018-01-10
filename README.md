@@ -7,7 +7,7 @@
 1、git remote 查看当前远程库  
 2、git remote -v (verbose)显示对应的克隆地址
 
-3、git remote add pb git@github.com:ITyanpeng/gitskills.git添加一个新的接远程仓库，并指定一个简称
+3、git remote add pb git@github.com:ITyanpeng/gitskills.git 添加一个新的接远程仓库，并指定一个简称
 
 4、git fetch pd 从远程仓库抓取数据
 
@@ -16,7 +16,7 @@
 
 6、git push -u origin master 把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程。由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。推送成功后，可以立刻在GitHub页面中看到远程库的内容已经和本地一模一样。
 
-7、git clone git@github.com:ITyanpeng/gitskills.git先有远程仓库时，本地克隆远程仓库如果有多个人协作开发，那么每个人各自从远程克隆一份就可以了。GitHub给出的地址不止一个，还可以用https://github.com/ITyanpeng/gitskills.git这样的地址。实际上，Git支持多种协议，默认的git://使用ssh，但也可以使用https等其他协议。使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。
+7、git clone git@github.com:ITyanpeng/gitskills.git先有远程仓库时，本地克隆远程仓库如果有多个人协作开发，那么每个人各自从远程克隆一份就可以了。GitHub给出的地址不止一个，还可以用https://github.com/ITyanpeng/gitskills.git 这样的地址。实际上，Git支持多种协议，默认的 git:// 使用ssh，但也可以使用https等其他协议。使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。
 
 8、git push origin master 推送数据到远程仓库
 
